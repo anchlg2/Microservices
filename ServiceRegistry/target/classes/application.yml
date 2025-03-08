@@ -1,0 +1,8 @@
+server:
+  port: 8761
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false # false so that service registry khud hi register na ho jae eureka server pe because service registry is not eureka client
+    fetch-registry: false # false so that service registry khud se hi  information fetch na kar le other services will fetch info from service registry
